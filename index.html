@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Garage Ledger: Car Care</title>
+<meta name="description" content="Privacy policy for Garage Ledger: Car Care (com.garageledger.app), an offline vehicle maintenance log published by AstraCore Studio. The app collects no personal data.">
+<meta name="theme-color" content="#F6F8FC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1220" media="(prefers-color-scheme: dark)">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="./">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231B5FD9'/%3E%3Cpath d='M12 40c0-5 2.3-8 6.2-9.3l1.8-2.8c.6-1 1.6-1.6 2.8-1.6h2.4c1.2 0 2.2.6 2.8 1.6l1.8 2.8C33.7 32 36 35 36 40v2.5c0 1-.8 1.8-1.8 1.8H13.8c-1 0-1.8-.8-1.8-1.8V40z' fill='%23fff'/%3E%3Ccircle cx='17.5' cy='43' r='2.6' fill='%231B5FD9'/%3E%3Ccircle cx='30.5' cy='43' r='2.6' fill='%231B5FD9'/%3E%3C/svg%3E">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #F4F7FC;
+    --surface: #FFFFFF;
+    --surface-2: #F7F9FD;
+    --ink: #16202F;
+    --ink-2: #4A586C;
+    --muted: #6E7C90;
+    --line: #E3E9F2;
+    --line-strong: #CFD9E8;
+    --brand: #1B5FD9;
+    --brand-soft: #EAF1FE;
+    --brand-2: #3D8BFF;
+    --ok-bg: #EAF7EF;
+    --ok-line: #BFE5CE;
+    --ok-ink: #1D6B3E;
+    --ok-on: #FFFFFF;
+    --radius: 16px;
+    --shadow: 0 1px 2px rgba(16, 30, 54, .06), 0 18px 40px -18px rgba(16, 30, 54, .22);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0B1220;
+      --surface: #111A29;
+      --surface-2: #16202F;
+      --ink: #E7EDF6;
+      --ink-2: #C2CDDC;
+      --muted: #93A2B8;
+      --line: #22304A;
+      --line-strong: #2E405E;
+      --brand: #7FA8E8;
+      --brand-soft: #16233A;
+      --brand-2: #5C9BFF;
+      --ok-bg: #12261B;
+      --ok-line: #1F4630;
+      --ok-ink: #8FD6A9;
+      --ok-on: #0B1220;
+      --shadow: none;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.68 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-feature-settings: "kern" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 812px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- top bar ---------- */
+  .topbar {
+    position: sticky; top: 0; z-index: 20;
+    backdrop-filter: saturate(180%) blur(12px);
+    background: color-mix(in srgb, var(--bg) 86%, transparent);
+    border-bottom: 1px solid var(--line);
+  }
+  .topbar .wrap {
+    display: flex; align-items: center; gap: 12px;
+    height: 58px;
+  }
+  .logo {
+    width: 30px; height: 30px; border-radius: 9px; flex: none;
+    background: linear-gradient(140deg, var(--brand-2), var(--brand));
+    display: grid; place-items: center;
+    box-shadow: 0 4px 10px -4px rgba(27, 95, 217, .6);
+  }
+  .logo svg { width: 19px; height: 19px; display: block; }
+  .topbar .name { font-size: 14.5px; font-weight: 650; letter-spacing: -.15px; }
+  .topbar .spacer { flex: 1; }
+  .topbar a.top-link {
+    font-size: 13.5px; color: var(--muted); text-decoration: none;
+    padding: 6px 10px; border-radius: 8px;
+  }
+  .topbar a.top-link:hover { color: var(--brand); background: var(--brand-soft); }
+
+  /* ---------- hero ---------- */
+  header.hero { padding: 54px 0 30px; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-size: 12px; font-weight: 650; letter-spacing: .09em; text-transform: uppercase;
+    color: var(--brand); background: var(--brand-soft);
+    border-radius: 999px; padding: 5px 12px; margin-bottom: 18px;
+  }
+  h1 {
+    font-size: clamp(30px, 5.2vw, 42px);
+    line-height: 1.14; letter-spacing: -.9px;
+    margin: 0 0 14px; font-weight: 700;
+  }
+  .lede { font-size: 17.5px; color: var(--ink-2); margin: 0 0 26px; max-width: 62ch; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+  .chips li {
+    font-size: 13px; color: var(--muted);
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 999px; padding: 5px 12px;
+  }
+  .chips b { color: var(--ink-2); font-weight: 600; }
+
+  /* ---------- card ---------- */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 40px 44px 44px;
+    margin-bottom: 28px;
+  }
+
+  /* ---------- summary ---------- */
+  .summary {
+    display: grid; grid-template-columns: 34px 1fr; gap: 14px;
+    background: var(--ok-bg); border: 1px solid var(--ok-line);
+    border-radius: 14px; padding: 18px 20px; margin: 0 0 30px;
+  }
+  .summary .tick {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: var(--ok-ink); display: grid; place-items: center;
+  }
+  .summary .tick svg { width: 18px; height: 18px; }
+  .summary .tick svg path { stroke: var(--ok-on); }
+  .summary h2 {
+    margin: 2px 0 6px; font-size: 15.5px; letter-spacing: -.1px; color: var(--ok-ink);
+  }
+  .summary p { margin: 0; font-size: 14.5px; line-height: 1.6; color: var(--ink-2); }
+
+  /* ---------- toc ---------- */
+  .toc {
+    border: 1px solid var(--line); border-radius: 14px;
+    background: var(--surface-2); padding: 20px 22px 18px;
+  }
+  .toc h2 {
+    margin: 0 0 12px; font-size: 11.5px; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--muted); font-weight: 650;
+  }
+  .toc ol {
+    list-style: none; margin: 0; padding: 0;
+    columns: 2; column-gap: 28px;
+  }
+  .toc li { break-inside: avoid; margin: 0 0 3px; }
+  .toc a {
+    display: flex; gap: 9px; align-items: baseline;
+    font-size: 14px; color: var(--ink-2); text-decoration: none;
+    padding: 4px 0;
+  }
+  .toc a:hover { color: var(--brand); }
+  .toc .n {
+    font-size: 11.5px; color: var(--muted); font-variant-numeric: tabular-nums;
+    min-width: 15px;
+  }
+
+  /* ---------- prose ---------- */
+  section { scroll-margin-top: 78px; }
+  section + section { margin-top: 40px; }
+  h2.sec {
+    font-size: 20px; line-height: 1.3; letter-spacing: -.3px;
+    margin: 0 0 12px; display: flex; gap: 11px; align-items: baseline;
+  }
+  h2.sec .num {
+    font-size: 12.5px; font-weight: 700; color: var(--brand);
+    background: var(--brand-soft); border-radius: 6px;
+    padding: 2px 7px; flex: none; transform: translateY(-2px);
+    font-variant-numeric: tabular-nums;
+  }
+  h3 { font-size: 15.5px; margin: 22px 0 8px; letter-spacing: -.1px; }
+  p { margin: 0 0 13px; color: var(--ink-2); }
+  strong { color: var(--ink); font-weight: 650; }
+  ul, ol.plain { margin: 0 0 14px; padding-left: 21px; color: var(--ink-2); }
+  li { margin-bottom: 7px; }
+  li::marker { color: var(--muted); }
+  a { color: var(--brand); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  code {
+    font: 13px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    background: var(--brand-soft); color: var(--ink);
+    padding: 1.5px 5px; border-radius: 5px; white-space: nowrap;
+  }
+  .muted { color: var(--muted); font-size: 14px; }
+
+  /* ---------- table ---------- */
+  .tbl-wrap { overflow-x: auto; margin: 4px 0 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  th, td {
+    text-align: left; padding: 11px 12px; vertical-align: top;
+    border-bottom: 1px solid var(--line); color: var(--ink-2);
+  }
+  th {
+    font-size: 11.5px; text-transform: uppercase; letter-spacing: .07em;
+    color: var(--muted); font-weight: 650; border-bottom-color: var(--line-strong);
+    background: var(--surface-2); white-space: nowrap;
+  }
+  tbody tr:last-child td { border-bottom: 0; }
+  td code { white-space: nowrap; }
+  th:first-child, td:first-child { white-space: nowrap; }
+
+  /* ---------- callout ---------- */
+  .note {
+    border-left: 3px solid var(--brand-2);
+    background: var(--brand-soft);
+    border-radius: 0 10px 10px 0;
+    padding: 13px 16px; margin: 16px 0;
+    font-size: 14.5px; color: var(--ink-2);
+  }
+  .note p:last-child { margin: 0; }
+  .note strong { color: var(--ink); }
+
+  /* ---------- contact ---------- */
+  .contact-grid { display: grid; gap: 10px; margin: 14px 0 4px; }
+  .contact-grid a {
+    display: flex; align-items: center; gap: 11px;
+    font-size: 15px; text-decoration: none; color: var(--ink);
+    background: var(--surface-2); border: 1px solid var(--line);
+    border-radius: 11px; padding: 12px 14px;
+  }
+  .contact-grid a:hover { border-color: var(--brand-2); }
+  .contact-grid .ico {
+    width: 26px; height: 26px; border-radius: 7px; flex: none;
+    background: var(--brand-soft); display: grid; place-items: center;
+  }
+  .contact-grid .ico svg { width: 14px; height: 14px; }
+  .contact-grid small { color: var(--muted); font-size: 12.5px; display: block; margin-top: 1px; }
+
+  /* ---------- footer ---------- */
+  footer {
+    padding: 30px 0 60px; border-top: 1px solid var(--line);
+    margin-top: 40px; color: var(--muted); font-size: 13.5px;
+  }
+  footer p { color: var(--muted); margin: 0 0 6px; }
+  footer .row { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 12px; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--brand); }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 640px) {
+    .wrap { padding: 0 16px; }
+    header.hero { padding: 34px 0 24px; }
+    .card { padding: 26px 20px 30px; border-radius: 14px; }
+    .toc ol { columns: 1; }
+    h2.sec { font-size: 18.5px; }
+    .lede { font-size: 16px; }
+    .summary { grid-template-columns: 1fr; gap: 10px; padding: 16px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+
+  /* ---------- print ---------- */
+  @media print {
+    :root { --bg: #fff; --surface: #fff; --ink: #000; --ink-2: #222; --muted: #555; }
+    body { background: #fff; font-size: 11pt; }
+    .topbar, .toc, .chips { display: none; }
+    .card { box-shadow: none; border: 0; padding: 0; }
+    header.hero { padding: 0 0 16px; }
+    section { break-inside: avoid; }
+    a { color: #000; text-decoration: underline; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M3.6 15.1c0-2 .9-3.2 2.5-3.7l.7-1.1c.25-.4.65-.65 1.1-.65h1.1c.45 0 .85.25 1.1.65l.7 1.1c1.6.5 2.5 1.7 2.5 3.7v1c0 .4-.3.7-.7.7H4.3c-.4 0-.7-.3-.7-.7v-1z" fill="#fff"/><circle cx="6.9" cy="16.6" r="1.05" fill="#1B5FD9"/><circle cx="11.9" cy="16.6" r="1.05" fill="#1B5FD9"/><path d="M14.6 7.2h5.8M17.5 4.3v5.8" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </div>
+    <div class="name">Garage Ledger</div>
+    <div class="spacer"></div>
+    <a class="top-link" href="#contact">Contact</a>
+    <a class="top-link" href="#top">Top</a>
+  </div>
+</div>
+
+<div class="wrap" id="top">
+
+  <header class="hero">
+    <div class="eyebrow">Privacy Policy</div>
+    <h1>Your car data stays<br>on your phone.</h1>
+    <p class="lede">Garage Ledger: Car Care is an offline maintenance log. It has no account, no
+      cloud sync, no analytics and no advertising — so there is no personal data for us to
+      collect, sell or lose.</p>
+    <ul class="chips">
+      <li><b>Effective</b> 3 November 2026</li>
+      <li><b>App</b> Garage Ledger: Car Care</li>
+      <li><b>Package</b> com.garageledger.app</li>
+      <li><b>Developer</b> AstraCore Studio</li>
+    </ul>
+  </header>
+
+  <div class="card">
+
+    <div class="summary">
+      <div class="tick" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 6.8" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <h2>The short version</h2>
+        <p>Everything you enter — vehicles, services, fuel, receipts — is written to private
+          storage on your device. Nothing is uploaded to us, because we operate no server.
+          Data leaves the app only when you export or share it yourself.</p>
+      </div>
+    </div>
+
+    <nav class="toc" aria-label="Contents">
+      <h2>On this page</h2>
+      <ol>
+        <li><a href="#who"><span class="n">1</span>Who we are</a></li>
+        <li><a href="#collect"><span class="n">2</span>Data we collect</a></li>
+        <li><a href="#stored"><span class="n">3</span>Data stored on your device</a></li>
+        <li><a href="#leaves"><span class="n">4</span>When data leaves your device</a></li>
+        <li><a href="#purchases"><span class="n">5</span>Purchases</a></li>
+        <li><a href="#permissions"><span class="n">6</span>Permissions</a></li>
+        <li><a href="#notifications"><span class="n">7</span>Notifications &amp; reminders</a></li>
+        <li><a href="#children"><span class="n">8</span>Children</a></li>
+        <li><a href="#retention"><span class="n">9</span>Retention &amp; deletion</a></li>
+        <li><a href="#rights"><span class="n">10</span>Your rights</a></li>
+        <li><a href="#security"><span class="n">11</span>Security</a></li>
+        <li><a href="#third-party"><span class="n">12</span>Third-party services</a></li>
+        <li><a href="#changes"><span class="n">13</span>Changes</a></li>
+        <li><a href="#contact"><span class="n">14</span>Contact</a></li>
+      </ol>
+    </nav>
+
+    <section id="who">
+      <h2 class="sec"><span class="num">1</span>Who we are</h2>
+      <p><strong>Garage Ledger: Car Care</strong> (the “app”, package <code>com.garageledger.app</code>)
+        is published on Google Play by <strong>AstraCore Studio</strong> (“we”, “us”, “our”).</p>
+      <p>For the purposes of the EU/UK General Data Protection Regulation, AstraCore Studio is the
+        data controller for the limited processing described in this policy. In practice that
+        processing happens on your device and under your control — we hold no copy of it.</p>
+    </section>
+
+    <section id="collect">
+      <h2 class="sec"><span class="num">2</span>Data we collect</h2>
+      <p><strong>None.</strong> We do not collect, transmit, sell or share personal data. Specifically,
+        the app contains:</p>
+      <ul>
+        <li>no user accounts, sign-in or cloud profile;</li>
+        <li>no analytics or usage-tracking SDK;</li>
+        <li>no advertising SDK and no advertising identifier;</li>
+        <li>no crash-reporting or remote-logging SDK;</li>
+        <li>no access to your location, contacts, calendar, SMS, call logs, microphone or camera.</li>
+      </ul>
+      <p>Because nothing is collected, we cannot identify you, and there is no profile of you to
+        build, sell or hand over.</p>
+    </section>
+
+    <section id="stored">
+      <h2 class="sec"><span class="num">3</span>Data stored on your device</h2>
+      <p>The app keeps the following in its private storage, which other apps cannot read:</p>
+      <div class="tbl-wrap">
+        <table>
+          <thead>
+            <tr><th>What</th><th>Details</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Vehicles</strong></td>
+              <td>Nickname, make, model, year, current mileage, engine, drivetrain and the optional VIN.</td>
+            </tr>
+            <tr>
+              <td><strong>Service records</strong></td>
+              <td>Date, mileage, cost, currency, provider, parts replaced and free-text notes.</td>
+            </tr>
+            <tr>
+              <td><strong>Fuel records</strong></td>
+              <td>Date, mileage, volume, cost, currency and station.</td>
+            </tr>
+            <tr>
+              <td><strong>Reminders</strong></td>
+              <td>Title, due date or due mileage, and the linked vehicle.</td>
+            </tr>
+            <tr>
+              <td><strong>Receipt photos</strong></td>
+              <td>Only images you pick. They are re-encoded and saved as private app files.</td>
+            </tr>
+            <tr>
+              <td><strong>Preferences</strong></td>
+              <td>Distance unit, currency, date format, theme, notification setting.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>This data lives in the app’s sandbox — a Room database, a DataStore preferences file and
+        internal image files. Other apps on your phone cannot read it.</p>
+      <div class="note">
+        <p><strong>Android auto-backup is switched off.</strong> The app sets
+          <code>allowBackup="false"</code>, so your records are never copied to Google Drive or
+          transferred to a new phone unless you export a backup file yourself.</p>
+      </div>
+    </section>
+
+    <section id="leaves">
+      <h2 class="sec"><span class="num">4</span>When data leaves your device</h2>
+      <p>Only when you explicitly ask it to:</p>
+      <ul>
+        <li><strong>Backup file</strong> — you choose the destination with the system file picker.
+          The archive contains your database and receipt photos.</li>
+        <li><strong>PDF or CSV report</strong> — you choose where to save it, or which app to send
+          it to.</li>
+        <li><strong>Share sheet</strong> — if you share a record or a report, the receiving app
+          gets that content.</li>
+      </ul>
+      <p>Once a file is outside the app, it is governed by wherever you put it — a cloud drive,
+        email, a messaging app. <strong>We receive nothing</strong>, and we never upload, sync or
+        back up your data to any service of ours.</p>
+    </section>
+
+    <section id="purchases">
+      <h2 class="sec"><span class="num">5</span>Purchases</h2>
+      <p>Pro is a one-time in-app purchase handled by <strong>Google Play Billing</strong>. Google
+        processes the payment and is the merchant of record; we never see your name, card number
+        or billing address.</p>
+      <p>The app only receives the purchase state — whether the item is owned — and stores it
+        locally so Pro features stay unlocked. Purchase history and payment data are handled by
+        Google under the
+        <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
+    </section>
+
+    <section id="permissions">
+      <h2 class="sec"><span class="num">6</span>Permissions</h2>
+      <p>The app declares four Android permissions. None of them is used to collect data.</p>
+      <div class="tbl-wrap">
+        <table>
+          <thead>
+            <tr><th>Permission</th><th>Why it is needed</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>POST_NOTIFICATIONS</code></td>
+              <td>Show service reminders. Optional — the app works fully without it.</td>
+            </tr>
+            <tr>
+              <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+              <td>Re-schedule reminder checks after the phone restarts.</td>
+            </tr>
+            <tr>
+              <td><code>VIBRATE</code></td>
+              <td>Vibrate for reminder notifications.</td>
+            </tr>
+            <tr>
+              <td><code>INTERNET</code></td>
+              <td>Used only by Google Play Billing. The app itself makes no network calls.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The app does <strong>not</strong> request location, contacts, camera, microphone, SMS or
+        broad file access. Receipt photos are chosen through the Android Photo Picker, which hands
+        over only the single image you select.</p>
+    </section>
+
+    <section id="notifications">
+      <h2 class="sec"><span class="num">7</span>Notifications &amp; reminders</h2>
+      <p>Service reminders are scheduled locally on your device. There is no push server, no
+        Firebase Cloud Messaging token and no remote trigger: the app checks its own database when
+        Android wakes it up. Reminder text stays on your phone, and notifications are shown only if
+        you grant the permission.</p>
+    </section>
+
+    <section id="children">
+      <h2 class="sec"><span class="num">8</span>Children</h2>
+      <p>The app is a general-purpose utility and is not directed at children. It collects no data
+        from anyone, including children under 13 (or the equivalent minimum age in your country),
+        so it does not knowingly collect personal information from children.</p>
+    </section>
+
+    <section id="retention">
+      <h2 class="sec"><span class="num">9</span>Retention &amp; deletion</h2>
+      <p>Your data stays on your device until <em>you</em> remove it. There is no server-side copy,
+        so there is nothing for us to delete on our side and no deletion request to file with us.</p>
+      <p>To erase everything:</p>
+      <ul>
+        <li>uninstall the app — Android deletes its private storage, including photos; or</li>
+        <li>delete individual vehicles, records and reminders inside the app. Deleting a vehicle
+          also removes its records, reminders and receipt images after a confirmation prompt.</li>
+      </ul>
+      <p>Backup files you exported earlier are outside the app and stay wherever you saved them;
+        delete them from that location (file manager, cloud drive, email) if you no longer want
+        them.</p>
+    </section>
+
+    <section id="rights">
+      <h2 class="sec"><span class="num">10</span>Your rights</h2>
+      <p>Privacy laws such as the GDPR and the CCPA/CPRA give you rights to access, correct, port,
+        restrict and erase your personal data, and to object to its processing. Because we hold no
+        personal data about you, there is nothing on our side to access, correct, port or erase —
+        and we do not sell or share personal information as those laws define it.</p>
+      <p>You keep full control of the on-device data at all times: you can view it in the app,
+        export it as a backup or report at any moment, and delete it as described above. If you
+        believe we hold something about you, write to us and we will confirm or explain within 30
+        days.</p>
+    </section>
+
+    <section id="security">
+      <h2 class="sec"><span class="num">11</span>Security</h2>
+      <p>Records are stored in app-private storage protected by the Android application sandbox,
+        and receipt images are re-encoded before being saved. The only network traffic the app
+        generates is Google Play Billing’s own communication with Google.</p>
+      <div class="note">
+        <p><strong>About backups:</strong> exported backup archives are standard ZIP files and are
+          <em>not</em> encrypted. Treat them as sensitive — they contain your full service history
+          and photos. Store them somewhere you trust, and delete old copies you no longer need.</p>
+      </div>
+    </section>
+
+    <section id="third-party">
+      <h2 class="sec"><span class="num">12</span>Third-party services</h2>
+      <p>The only third party involved is Google, through Google Play (distribution and payment)
+        and Google Play Billing (in-app purchase). Google may collect installation, purchase and
+        diagnostic information independently of this app; that processing is governed by
+        Google’s own policy, not this one.</p>
+      <p>There are no advertising networks, analytics providers, crash reporters, social plug-ins
+        or data brokers integrated into the app.</p>
+    </section>
+
+    <section id="changes">
+      <h2 class="sec"><span class="num">13</span>Changes to this policy</h2>
+      <p>If this policy changes, the updated version will be published at this same URL with a new
+        effective date. Material changes will also be noted in the app’s release notes on Google
+        Play. Continuing to use the app after an update means you accept the revised policy.</p>
+    </section>
+
+    <section id="contact">
+      <h2 class="sec"><span class="num">14</span>Contact</h2>
+      <p>Questions about this policy or about privacy in the app? Write to us — we aim to reply
+        within 5 business days.</p>
+      <div class="contact-grid">
+        <a href="mailto:daviediao@gmail.com">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="2.5" y="5" width="19" height="14" rx="2.5" stroke="#1B5FD9" stroke-width="1.8"/><path d="M3.5 6.5l8.5 6 8.5-6" stroke="#1B5FD9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span>daviediao@gmail.com<small>AstraCore Studio — privacy contact</small></span>
+        </a>
+        <a href="https://tongweitech.xyz/" rel="noopener">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#1B5FD9" stroke-width="1.8"/><path d="M3.2 12h17.6M12 3.1c2.4 2.6 3.6 5.6 3.6 8.9s-1.2 6.3-3.6 8.9c-2.4-2.6-3.6-5.6-3.6-8.9S9.6 5.7 12 3.1z" stroke="#1B5FD9" stroke-width="1.5"/></svg></span>
+          <span>tongweitech.xyz<small>Developer website</small></span>
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p><strong>Garage Ledger: Car Care</strong> — privacy policy, effective 3 November 2026.</p>
+    <p>This policy applies to the Android application <code>com.garageledger.app</code> distributed
+      on Google Play by AstraCore Studio.</p>
+    <div class="row">
+      <span>© 2026 AstraCore Studio</span>
+      <a href="#top">Back to top</a>
+      <a href="mailto:daviediao@gmail.com">Report a privacy issue</a>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
